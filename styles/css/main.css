@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+section {
+  padding-block: 3rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-baseline {
+  justify-content: baseline;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+a:active {
+  opacity: 0.5;
+}
+
+.container {
+  width: 1180px;
+  margin-inline: auto;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+header#main-header {
+  background-color: #5183A7;
+  padding: 1rem;
+  color: white;
+}
+header#main-header .container nav .bar {
+  color: #D9D9D9;
+  display: none;
+}
+header#main-header .container nav .src {
+  margin-left: 290px;
+}
+header#main-header .container nav .src label {
+  font-weight: 300;
+  font-size: 25px;
+}
+header#main-header .container nav .src input {
+  font-weight: 300;
+  font-size: 25px;
+  padding: 5px 3px;
+  border: none;
+  border-radius: 5px;
+  width: 110px;
+}
+header#main-header .container nav .src button {
+  width: 100px;
+  padding: 5px 3px;
+  font-weight: 300;
+  color: white;
+  font-size: 25px;
+  background: #54ACDE;
+  border: none;
+  border-radius: 5px;
+}
+header#main-header .container nav .src button:hover {
+  background-color: rgba(84, 172, 222, 0.75);
+  color: rgba(255, 255, 255, 0.9);
+}
+header#main-header .container nav .src button:active {
+  background-color: rgba(84, 172, 222, 0.5);
+  color: rgba(255, 255, 255, 0.9);
+}
+header#main-header .container nav p {
+  font-weight: 300;
+  font-size: 25px;
+}
+
+section#bar {
+  width: 300px;
+  position: fixed;
+  height: 100%;
+  background-color: #4B597C;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  color: white;
+  padding: 0 44px;
+  transition: 0.3s all linear;
+}
+section#bar h1 {
+  margin-top: 0.5rem;
+  font-size: 40px;
+  font-weight: 100;
+  text-align: center;
+}
+section#bar h2 {
+  margin-top: 100px;
+  font-size: 40px;
+  font-weight: 100;
+}
+section#bar ul {
+  margin-block: 30px;
+  margin-left: 40px;
+  gap: 14px;
+}
+section#bar .flex {
+  width: 100%;
+  gap: 20px;
+}
+section#bar .flex input {
+  width: 100%;
+  color: black;
+  font-size: 25px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+section#bar .flex .btns {
+  width: 100%;
+}
+section#bar .flex .btns button {
+  font-size: 25px;
+  width: 45%;
+  color: white;
+  background-color: #54ACDE;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 26px;
+}
+section#bar p {
+  display: none;
+  font-weight: 300;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+section#books {
+  background-color: #B5E7FD;
+}
+section#books .container .cards {
+  margin-left: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  min-height: 564px;
+}
+section#books .container .cards .card {
+  height: 300px;
+  background-color: #21678E;
+  border-radius: 26px;
+}
+section#books .container .cards .card h2 {
+  width: 100%;
+  background-color: #54ACDE;
+  border-radius: 26px 26px 0px 0px;
+  color: white;
+  padding: 20px 0px 20px 21px;
+}
+section#books .container .cards .card h3 {
+  padding: 24px 0 24px 24px;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+}
+section#books .container .cards .card p {
+  color: #CDCACA;
+  font-weight: 100;
+  padding-inline: 24px;
+  line-height: 24px;
+}
+section#books .container .cards .card scan {
+  display: inline-block;
+  color: #FBFBFB;
+  padding-left: 24px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 940px;
+  }
+}
+@media (max-width: 960px) {
+  .container {
+    width: 560px;
+    margin: 0 auto;
+  }
+  header#main-header .container nav .bar {
+    display: block;
+  }
+  header#main-header .container nav .src {
+    margin-left: 0;
+  }
+  header#main-header .container nav p {
+    display: none;
+  }
+  section#bar {
+    transform: translateX(-100%);
+    width: 100%;
+  }
+  section#bar h2 {
+    margin-top: 50px;
+  }
+  section#bar .flex .btns button {
+    padding: 10px;
+  }
+  section#bar p {
+    display: block;
+  }
+  section#books .container .cards {
+    margin: 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 580px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+  header#main-header .container nav .src label {
+    display: none;
+  }
+  header#main-header .container nav .src input {
+    width: 100px;
+  }
+  header#main-header .container nav .src button {
+    width: 100px;
+  }
+  section#books .container .cards {
+    margin-inline: 5px;
+    grid-template-columns: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,87 @@
+@media (max-width: $lg) { // нужная часть!!!
+  .container {
+    width: $md - 20px;
+  }
+}
+
+@media (max-width: $md){
+  .container{
+    width: $sm - 20px;
+    margin: 0 auto;
+  }
+  header#main-header{
+    .container{
+      nav{
+        .bar{
+          display: block;
+        }
+        .src{
+          margin-left: 0;
+        }
+        p{
+          display: none;
+        }
+      }
+    }
+  }
+  section#bar{
+    transform: translateX(-100%);
+    width: 100%;
+    h2{
+      margin-top: 50px;
+    }
+    .flex{
+      .btns{
+        button{
+          padding: 10px;
+        }
+      }
+    }
+    p{
+      display: block;
+
+    }
+  }
+  section#books{
+    .container{
+      .cards{
+        margin: 0;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@media (max-width: $sm) {  // нужная часть!!!
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+  header#main-header{
+    .container{
+      nav{
+        .src{
+          label{
+            display: none;
+          }
+          input{
+            width: 100px;
+          }
+          button{
+            width: 100px;
+          }
+  
+        }
+      }
+    }
+  }
+  section#books{
+    .container{
+      .cards{
+        margin-inline: 5px;
+        grid-template-columns: 100%;
+      }
+    }
+  }
+}
+
