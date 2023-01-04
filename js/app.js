@@ -179,20 +179,20 @@ min.addEventListener("click", () => {
 });
 
 
-
 srcbtn.addEventListener("click", () => {
+  let result = search.value.toLowerCase();
+  let find = data.filter((item) => item.title.toLowerCase().includes(result));
   book.innerHTML = "";
   let sum = 0;
-  for(i=0; i<data.length; i++) {
-    if (search.value == data[i].title) {
-      card(data[i].title, data[i].description, data[i].price);
-      const summ = document.querySelector("#summa");
-      const summ1 = document.querySelector("#summa1");
-      sum += data[i].price;
-      summ.textContent = sum;
-      summ1.textContent = sum;
-    }
+  transformBar();
+  for (i = 0; i < find.length; i++) {
+    card(find[i].title, find[i].description, find[i].price);
+    const summ = document.querySelector("#summa");
+    const summ1 = document.querySelector("#summa1");
+    sum += data[i].price;
+    summ.textContent = sum;
+    summ1.textContent = sum;
   }
-  search.value = ""
 });
+
 
